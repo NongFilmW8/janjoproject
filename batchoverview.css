@@ -1,0 +1,107 @@
+/* styles.css */
+/* Dark mode */
+body.dark-mode .navbar {
+    background-color: #343a40; /* สีพื้นหลังของ navbar ใน Dark Mode */
+}
+
+.dark-mode-button {
+    background: none;
+    border: none;
+    color: inherit; /* ให้สีของปุ่มเหมือนกับสีของ navbar */
+    font-size: 1.5em;
+}
+/* ตัวอย่าง CSS สำหรับ Dark Mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #ffffff;
+}
+/* CSS สำหรับการเปลี่ยนแปลง Dark Mode */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar, .card {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* CSS สำหรับไอคอนอนิเมชัน */
+.dark-mode-button {
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-button:active {
+    transform: scale(1.2);
+}
+
+#moonIcon {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* ์Nav bar */
+.navbar.dark-mode {
+    background-color: #495057;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.card.dark-mode {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+
+.batch-card {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.card {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.card:hover .card-body {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(0);
+}
+
+.batch-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.navbar {
+    background-color: #3059ac8f !important; /* บังคับใช้สีนี้ */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* เพิ่มเงา */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.7); /* ปรับสีของลิงก์ให้เข้มขึ้น */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.9); /* ชี้ละเปลี่ยนสี Holdwer */
+}
